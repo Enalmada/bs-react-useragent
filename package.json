@@ -1,0 +1,41 @@
+{
+  "name": "bs-react-useragent",
+  "version": "1.0.0",
+  "description": "Bucklescript bindings for react-useragent",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Enalmada/bs-react-useragent"
+  },
+  "scripts": {
+    "build": "bsb -clean-world -make-world",
+    "clean": "bsb -clean-world",
+    "test": "exit 0",
+    "preversion": "yarn run clean",
+    "changelog": "auto-changelog --template keepachangelog"
+  },
+  "main": "src/UserAgent.bs.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "@quentin-sommer/react-useragent": ">=2.0.0",
+    "bs-platform": "^4.0.5",
+    "reason-react": ">=0.5.3"
+  },
+  "devDependencies": {
+    "bs-platform": "^4.0.6",
+    "react": "16.6.0",
+    "react-dom": "16.6.0",
+    "reason-react": ">=0.5.3"
+  },
+  "files": [
+    "src",
+    "bsconfig.json"
+  ],
+  "keywords": [
+    "react-useragent",
+    "react",
+    "reason",
+    "reasonml",
+    "ocaml",
+    "bucklescript"
+  ]
+}
